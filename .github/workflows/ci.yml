@@ -46,3 +46,7 @@ jobs:
         run: ${{ matrix.runs.test }}
       - name: '"docker images"'
         run: ${{ matrix.runs.images }}
+
+      - name: Docker Login
+        uses: docker/login-action@v3.0.0
+            
